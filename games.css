@@ -1,0 +1,66 @@
+@import url('https://rsms.me/inter/inter.css');
+
+
+
+body {
+	font-family: Inter, "Inter UI", "Helvetica Now", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+}
+
+.gofry {
+    height: 300px;
+
+}
+
+p {
+    font-size: xx-large;
+    color: blanchedalmond;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav > a {
+	display: flex;
+	align-items: center;
+
+	width: max-content;
+
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.6;
+
+	transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+nav > a[href]:hover {
+	opacity: 1;
+	color: var(--link-colour);
+}
+
+nav > a::before {
+	content: "";
+	background: var(--link-icon);
+	background-color: currentColor;
+	background-size: 100%;
+	width: 1.75rem;
+	height: 1.75rem;
+	margin-right: 0.4em;
+	margin-bottom: 1px;
+	display: inline-block;
+	transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+nav > a[href]::after {
+	content: "→";
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+	transition: margin 0.2s ease;
+}
+
+nav > a[href]:hover::after {
+	margin-left: 0.8em;
+	margin-right: 0em;
+}
