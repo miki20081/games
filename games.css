@@ -4,7 +4,11 @@
 
 body {
 	font-family: Inter, "Inter UI", "Helvetica Now", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: black;
+
+	background-color: #000;
+	background-image: url(res/Back.png);
+	background-position: center;
+	background-size: 183vmin;
 }
 
 .gofry {
