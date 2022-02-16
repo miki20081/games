@@ -9,6 +9,10 @@ body {
 	background-image: url(res/Back.png);
 	background-position: center;
 	background-size: 183vmin;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	padding: 2rem 3rem;
 }
 
 .gofry {
